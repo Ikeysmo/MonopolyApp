@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">MonopolyApp</string>
+    <string-array name="GroupList">
+        <item>Isaiah</item>
+        <item>Sean</item>
+        <item>Tyler</item>
+        <item>Bailey</item>
+        <item>Alex</item>
+        <item>Taylor</item>
+        <item>Molly</item>
+        <item>Mack</item>
+        <item>Colin</item>
+    </string-array>
+</resources>

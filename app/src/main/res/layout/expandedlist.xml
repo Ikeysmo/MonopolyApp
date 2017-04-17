@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:text="Add 200"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:id="@+id/add200Button"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_marginTop="11dp"
+        android:id="@+id/editText"
+        android:hint="Enter Number"
+        android:layout_marginStart="13dp"
+        android:layout_below="@+id/add200Button"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Add Money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addMoneyButton"
+        android:layout_alignBottom="@+id/editText"
+        android:layout_toEndOf="@+id/transferButton" />
+
+    <Button
+        android:text="Remove Money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/removeMoneyButoon"
+        android:layout_below="@+id/addMoneyButton"
+        android:layout_alignStart="@+id/addMoneyButton" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:id="@+id/spinner"
+        android:layout_below="@+id/removeMoneyButoon"
+        android:layout_alignParentStart="true"
+        android:focusable="false"/>
+
+    <Button
+        android:text="Transfer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:id="@+id/transferButton"
+        android:layout_below="@+id/spinner"
+        android:layout_alignStart="@+id/add200Button" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@android:color/black"
+        android:layout_below="@+id/transferButton"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"/>
+</RelativeLayout>

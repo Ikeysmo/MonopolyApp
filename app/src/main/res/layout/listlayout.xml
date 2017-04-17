@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants">
+
+    <ImageView
+        android:layout_width="126dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/monopoly"
+        android:id="@+id/imageView3" />
+
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/textview1"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/spinner2"
+        android:layout_alignTop="@+id/textview1"
+        android:entries="@array/GroupList"
+        android:textAlignment="center"
+        android:textSize="32dp"
+        android:focusableInTouchMode="false"
+        android:focusable="false"/>
+
+    <TextView
+        android:text="Name"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview1"
+        android:layout_weight="0.02"
+        tools:text="Player Name"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/imageView3"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:text="$1500"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/moneyAmount"
+        android:textSize="30sp"
+        android:textColor="#FF31A719"
+        android:layout_marginEnd="19dp"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:textSize="30sp"
+        android:layout_below="@+id/textview1"
+        android:layout_alignStart="@+id/textview1"
+        android:layout_marginTop="19dp" />
+
+
+
+
+</RelativeLayout>
